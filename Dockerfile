@@ -12,4 +12,4 @@ WORKDIR $SOURCES_PATH
 
 EXPOSE 8080
 
-ENTRYPOINT exec /usr/bin/pil
+ENTRYPOINT  ["pil"]
