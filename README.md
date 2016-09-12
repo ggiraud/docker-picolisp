@@ -47,7 +47,7 @@ Make an alias
 A convenient way to use this image on GNU-Linux or OS X is to create an alias in your .bashrc:
 
 ```bash
-echo "alias pil='docker run -it --rm -p 8080:8080  -v /my/scripts/path/on/host:/root/src ggiraud/docker-picolisp'" >> ~/.bashrc
+echo "alias pil='docker run -it --rm -p 8080:8080  -v /my/scripts/path/on/host:/root/src ggiraud/docker-picolisp '" >> ~/.bashrc
 ```
 
 You can then use the image as a command:
