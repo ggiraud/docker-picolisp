@@ -1,8 +1,11 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get dist-upgrade -y
-RUN apt-get install -y vim picolisp
-RUN apt-get autoremove --purge -y
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+		vim \
+		picolisp; \
+	rm -rf /var/lib/apt/lists/*
 
 ENV SOURCES_PATH=/root/src
 
